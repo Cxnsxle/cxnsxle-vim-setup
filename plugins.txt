@@ -1,0 +1,22 @@
+# Format: plugin-type plugin-owner plugin-name branch-or-tag
+#	plugin-type:
+#		ps (primary start)
+#		po (primary optional)
+#		ts (theme start)
+#		to (theme optional)
+
+ps mattn emmet-vim master
+ps preservim nerdtree master
+ps prabirshrestha vim-lsp master
+ps mattn vim-lsp-settings master
+ps prabirshrestha asyncomplete.vim master
+ps prabirshrestha asyncomplete-lsp.vim master
+ps tmsvg pear-tree master
+
+ts morhetz gruvbox master
+ts joshdick onedark.vim main
+ts vim-airline vim-airline master
+ts vim-airline vim-airline-themes master
+to cocopon iceberg.vim master
+to dikiaap minimalist master
+to rakr vim-one master
