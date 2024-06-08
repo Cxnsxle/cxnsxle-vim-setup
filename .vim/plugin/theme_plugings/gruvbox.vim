@@ -1,3 +1,3 @@
-"colorscheme gruvbox
-"set bg=dark
-"hi Normal guibg=NONE
+colorscheme gruvbox
+set bg=dark
+hi Normal guibg=NONE
