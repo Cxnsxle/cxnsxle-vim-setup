@@ -1,5 +1,7 @@
 " vim-lsp.vim
 
+let g:lsp_diagnostics_enabled = 0         " disable diagnostics support
+
 " Declaration
 nmap <leader>gdd <plug>(lsp-definition)
 " Definition
