@@ -5,6 +5,8 @@
 #		ts (theme start)
 #		to (theme optional)
 
+ps dense-analysis ale master
+ps rhysd vim-lsp-ale master
 ps mattn emmet-vim master
 ps preservim nerdtree master
 ps prabirshrestha vim-lsp master
