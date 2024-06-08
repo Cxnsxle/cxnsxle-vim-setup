@@ -12,7 +12,7 @@ set nobackup                    "" don't backup, use git
 filetype indent plugin on
 
 "" Persist undo history between file editing sessions.
-set undodir=~/.vim/undodir
+set undodir=/home/f4lcxn/.vim/undodir
 set undofile
 
 "" Install vim-gtk to support clipboard between SO and Vim
@@ -20,6 +20,7 @@ set clipboard=unnamedplus		"" enable register + to export internal Vim Clipboard
 set clipboard+=unnamed			"" enable register "" to import extern Clipboard
 
 "" Cursor and columns and search
+set backspace=indent,eol,start  "" active backspace behavior
 set mouse=a                     "" active mouse scroll
 set cursorline
 set guicursor=
@@ -36,6 +37,9 @@ set hidden
 "" Turn off bells
 set noerrorbells
 set belloff=all
+
+"" Disable automaic insertion of commentary characters
+autocmd FileType * setlocal formatoptions-=ro
 
 "" Indent and tabulations
 set tabstop=4 softtabstop=4
@@ -58,13 +62,13 @@ set numberwidth=4
 set showmatch       "" highlight matching parentheses and brackets
 
 "" Mark trailing spaces depending on whether we have a fancy terminal or not.
-if &t_Co > 2
-    highlight ExtraWhitespace ctermbg=1
-    match ExtraWhitespace /\s\+$/
-else
-    set listchars=trail:~
-    set list
-endif
+"if &t_Co > 2
+"    highlight ExtraWhitespace ctermbg=1
+"    match ExtraWhitespace /\s\+$/
+"else
+"    set listchars=trail:~
+"    set list
+"endif
 
 let mapleader = " "
 nnoremap <leader>w :w<CR>
